@@ -1,0 +1,56 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #F0EFEB;">
+    <style>
+        .text-who {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 600;
+            fill: #FF6347; /* Tomato Red */
+            text-anchor: middle;
+            animation: fadeInScale 1s ease-out forwards;
+        }
+        .text-knew {
+            font-family: 'Inter', sans-serif;
+            font-size: 36px;
+            font-style: italic;
+            fill: #4682B4; /* Steel Blue */
+            text-anchor: middle;
+            animation: fadeInSlide 1s 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        .surprise-box {
+            stroke: #E0D8CE; /* Soft Grey */
+            stroke-width: 2px;
+            fill: #F5F5DC; /* Beige */
+            rx: 15;
+            filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.05));
+        }
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.8) translateY(10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .sparkle {
+            fill: #FFD700; /* Gold-ish for sparkle */
+            stroke: #FFA500; /* Orange for outline */
+            stroke-width: 0.5;
+            opacity: 0;
+            animation: sparkleAnim 1.5s 1s ease-in-out infinite;
+        }
+        @keyframes sparkleAnim {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+    <rect x="10" y="10" width="280" height="180" class="surprise-box"/>
+    <text x="150" y="90" class="text-who">Who</text>
+    <text x="150" y="145" class="text-knew">Knew?!</text>
+
+    <!-- Some playful sparkles -->
+    <path class="sparkle" d="M230 40 L232.5 45 L230 50 L227.5 45 Z" style="animation-delay: 1.2s;"/>
+    <path class="sparkle" d="M245 55 L247.5 60 L245 65 L242.5 60 Z" style="animation-delay: 1.4s;"/>
+    <path class="sparkle" d="M60 150 L62.5 155 L60 160 L57.5 155 Z" style="animation-delay: 1.6s;"/>
+    <path class="sparkle" d="M75 130 L77.5 135 L75 140 L72.5 135 Z" style="animation-delay: 1.8s;"/>
+</svg>

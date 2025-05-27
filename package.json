@@ -1,0 +1,18 @@
+{
+  "name": "hueneu-website",
+  "version": "0.1.0",
+  "description": "Hueneu Studio - Where stories find their aesthetic.",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"Run startup.sh to start the application\" && exit 1",
+    "dev": "echo \"Please use startup.sh for local development, or ensure a local HTTP server is running on port 9000 serving the root directory. Example: npx http-server -p 9000 -c-1\""
+  },
+  "author": "hueneu",
+  "license": "UNLICENSED",
+  "keywords": [
+    "graphic design",
+    "portfolio",
+    "static website",
+    "hueneu"
+  ]
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <title>Social Media Icon</title>
+  <path d="M17 3H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4z"/>
+  <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <line x1="16.5" y1="7.5" x2="16.5" y2="7.5"/>
+</svg>
