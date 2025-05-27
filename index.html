@@ -18,8 +18,8 @@
                 <h1 class="tagline">Where stories find their aesthetic.</h1>
                 <p class="subtext">Designs that whisper loud stories.</p>
             </div>
-            <a href="#story" class="scroll-down-indicator">
-                <img src="./images/scroll-indicator.svg" alt="Scroll down">
+            <a href="#story" class="scroll-down-indicator" aria-label="Scroll to Our Story section">
+                <img src="./images/scroll-indicator.svg" alt="Scroll down arrow">
             </a>
         </section>
 
@@ -28,10 +28,8 @@
             <h2>Our Story</h2>
             <p>At hueneu, we believe in the quiet power of design. "Hue" represents the vibrant bursts of creativity, the unexpected palettes, the colors that tell a story. "Neu" signifies the grounding neutrality, the calm confidence, the intentional space that allows the story to breathe. </p>
             <p>We blend these elements to create designs that are not just seen, but felt. It's about finding that perfect balance, that surprising harmony that makes you pause and think... <span class="who-knew-trigger">"Whoa, who knew?"</span></p>
-            <div class="who-knew-visual" aria-hidden="true">
-                <!-- Placeholder for images/who-knew-visual.png - to be added in a future batch -->
-                <!-- For now, a styled text or CSS effect -->
-                 Who Knew?
+            <div class="who-knew-visual-container">
+                <img src="./images/who-knew-visual.svg" alt="Who Knew?! playful graphic with text 'Who Knew?!' and sparkles" class="who-knew-visual-image">
             </div>
         </section>
 
@@ -40,38 +38,32 @@
             <h2>What We Do</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-branding.svg -->
-                    <div class="service-icon-placeholder">Br</div>
+                    <img src="./images/icon-branding.svg" alt="Branding icon - layered chevrons" class="service-icon">
                     <h3>Branding</h3>
                     <p>Crafting identities that resonate and endure.</p>
                 </div>
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-packaging.svg -->
-                    <div class="service-icon-placeholder">Pa</div>
+                    <img src="./images/icon-packaging.svg" alt="Packaging icon - stylized box" class="service-icon">
                     <h3>Packaging</h3>
                     <p>Packaging, but make it poetic.</p>
                 </div>
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-social-media.svg -->
-                    <div class="service-icon-placeholder">So</div>
+                    <img src="./images/icon-social-media.svg" alt="Social Media icon - rounded square with circle" class="service-icon">
                     <h3>Social Media</h3>
                     <p>Engaging narratives for the digital world.</p>
                 </div>
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-stationery.svg -->
-                    <div class="service-icon-placeholder">St</div>
+                    <img src="./images/icon-stationery.svg" alt="Stationery icon - document with folded corner" class="service-icon">
                     <h3>Stationery</h3>
                     <p>Tangible expressions of your brand's voice.</p>
                 </div>
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-coffee-table-books.svg -->
-                    <div class="service-icon-placeholder">Cb</div>
+                    <img src="./images/icon-coffee-table-books.svg" alt="Coffee Table Books icon - stylized closed book" class="service-icon">
                     <h3>Coffee Table Books</h3>
                     <p>Curating stories into timeless keepsakes.</p>
                 </div>
                 <div class="service-item">
-                    <!-- Icon placeholder: images/icon-creative-projects.svg -->
-                    <div class="service-icon-placeholder">Cp</div>
+                    <img src="./images/icon-creative-projects.svg" alt="Creative Projects icon - starburst or sparkle" class="service-icon">
                     <h3>Creative Projects</h3>
                     <p>Exploring unique ideas, beautifully executed.</p>
                 </div>
@@ -89,7 +81,7 @@
         <!-- Let's Work Together Section -->
         <section id="contact" class="contact-section content-section">
             <h2>Let's Work Together</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="#" method="POST">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
@@ -113,6 +105,6 @@
         <footer class="site-footer">
             <p>&copy; 2024 hueneu. All rights reserved.</p>
         </footer>
-    </div>
+    </div> <!-- Closing .container -->
 </body>
 </html>

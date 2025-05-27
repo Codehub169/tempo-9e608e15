@@ -141,6 +141,9 @@ img {
     color: var(--color-text-muted);
     font-family: var(--font-primary);
     font-weight: 300;
+    max-width: 65ch; /* Added for better readability on wide screens */
+    margin-left: auto; /* Center if max-width is applied */
+    margin-right: auto; /* Center if max-width is applied */
 }
 
 .scroll-down-indicator {
@@ -155,7 +158,7 @@ img {
 .scroll-down-indicator img {
     width: 25px; /* Adjust size of SVG */
     height: auto;
-    color: var(--color-text-muted); /* SVG stroke is currentColor */
+    /* SVG stroke is currentColor, CSS color will be inherited */
 }
 
 @keyframes bounce {
@@ -186,7 +189,7 @@ img {
 }
 
 .who-knew-trigger::after {
-    content: "✨"; /* Playful emoji */
+    content: "\2728"; /* Playful emoji */
     position: absolute;
     right: -20px;
     top: 0;
@@ -200,24 +203,22 @@ img {
     transform: scale(1);
 }
 
-.who-knew-visual {
-    /* Placeholder for actual visual - to be styled when image is available */
-    /* For now, a simple text reveal on hover could be done if this element itself is hovered */
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    font-family: var(--font-secondary);
+.who-knew-visual-container {
+    text-align: center; /* Centers the image if it's inline-block */
     margin-top: 1.5rem;
-    padding: 1rem;
-    background-color: #fff5f0;
-    border-radius: var(--border-radius);
-    border: 1px dashed var(--color-accent);
-    display: inline-block; /* Or block with margin auto */
-    opacity: 0.8;
-    transition: opacity var(--transition-speed), transform var(--transition-speed);
 }
 
-.who-knew-visual:hover {
+.who-knew-visual-image {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px; /* Corresponds to SVG's native width */
+    height: auto;
+    opacity: 0.9;
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+    /* The SVG itself handles background, border, and rounded corners */
+}
+
+.who-knew-visual-image:hover {
     opacity: 1;
     transform: scale(1.05);
 }
@@ -244,19 +245,12 @@ img {
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-.service-item .service-icon-placeholder {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--color-pop-hue);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+.service-item .service-icon {
+    width: 48px;
+    height: 48px;
     margin: 0 auto 1.5rem;
-    /* This will be replaced by actual SVG icons */
+    color: var(--color-accent); /* SVG icons use currentColor for stroke */
+    display: block; /* Ensures margin auto works for centering */
 }
 
 .service-item h3 {
@@ -274,7 +268,7 @@ img {
     margin-bottom: 0;
 }
 
-/* Why hueneu Section */
+/* Why hueneu? Section */
 .why-section .poetic-pitch {
     font-size: 1.2rem;
     font-family: var(--font-secondary);
